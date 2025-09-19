@@ -1,9 +1,5 @@
 # Bioinformatics_Python
 
-<!-- BADGES:BEGIN -->
-[![CI](https://img.shields.io/github/actions/workflow/status/OWNER/REPO/ci.yml?branch=main)](https://github.com/OWNER/REPO/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-<!-- BADGES:END -->
 
 Synthetic RNA-seq analysis toolbox demonstrating normalization, clustering, and transition modeling.
 
