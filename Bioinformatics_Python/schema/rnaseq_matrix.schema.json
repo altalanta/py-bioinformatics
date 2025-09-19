@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RNA-seq Input Contract",
+  "type": "object",
+  "properties": {
+    "X_path": { "type": "string", "description": "Path to counts/expression matrix file (CSV/Parquet/H5AD)" },
+    "feature_axis": { "type": "string", "enum": ["genes_rows", "genes_cols"] },
+    "sample_meta": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sample_id": { "type": "string" },
+          "batch": { "type": "string" },
+          "condition": { "type": "string" }
+        },
+        "required": ["sample_id"]
+      }
+    },
+    "normalization": { "type": "string", "enum": ["TPM", "CPM", "log1p", "scran", "none"] }
+  },
+  "required": ["X_path", "feature_axis", "sample_meta", "normalization"],
+  "additionalProperties": false
+}

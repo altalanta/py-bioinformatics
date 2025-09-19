@@ -1,0 +1,12 @@
+{
+  "X_path": "data/expression_matrix.csv",
+  "feature_axis": "genes_rows",
+  "sample_meta": [
+    {"sample_id": "sample_1", "batch": "b1", "condition": "treated"},
+    {"sample_id": "sample_2", "batch": "b1", "condition": "treated"},
+    {"sample_id": "sample_3", "batch": "b2", "condition": "control"},
+    {"sample_id": "sample_4", "batch": "b2", "condition": "control"},
+    {"sample_id": "sample_5", "batch": "b1", "condition": "control"}
+  ],
+  "normalization": "log1p"
+}
